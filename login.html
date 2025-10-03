@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        body{
+            --bg: white;
+            --text:black;
+            background: var(--bg);
+            color:var(--text);
+            transition: 0.3s;
+        }
+
+        /* Dark mode jab checkbox tick hoga */
+        body:has(#switch:checked){
+            --bg: black;
+            --text: rgb(145, 145, 23);
+        }
+
+        /* Input box */
+        input[type="text"]{
+            width: 50%;
+            margin: 20px auto;
+            display: block;
+            padding: 20px;
+        }
+
+        /* Button */
+        button{
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            color: whitesmoke;
+            background-color: rgb(32, 32, 30);
+            font-size: 30px;
+            padding: 20px;
+            display: block;
+            margin: 50px auto;
+            box-shadow: 0 0 20px rgb(102, 34, 34);
+        }
+        button:hover{
+            background-color: rgb(127, 141, 127);
+        }
+
+        /* Heading */
+        h1{
+            text-align: center;
+            margin-bottom: 70px;
+            font-size: 100px;
+        }
+
+        /* Dark Mode toggle ko left side */
+        .dark-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Dark mode toggle -->
+    <label class="dark-toggle">
+        <input  type="checkbox" id="switch"> Dark Mode
+    </label>
+
+    <h1 class="text">Enter Your Email</h1>
+    <input placeholder="Email" type="text">
+    <button>Login now</button>
+</body>
+</html>

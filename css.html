@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Done</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Client Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body{
+            --bg: white;
+            --text:black;
+            background: var(--bg);
+            color:var(--text);
+            transition: 0.3s;
+        }
+        body:has(#switch:checked){
+            --bg: black;
+            --text: rgb(145, 145, 23);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            background: linear-gradient(95deg,rgb(212, 192, 192),rgb(212, 111, 23)) ;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 80px;
+            color: antiquewhite;
+            box-shadow: 0 0 20px gold;
+        }
+        ul {
+            display: flex;
+            gap: 100px;
+            list-style-type: none;
+            cursor: pointer;
+        }
+        nav div button {
+             padding: 5px 10px;
+             border: none;
+             border-radius: 10px;
+             background-color: antiquewhite;
+        }
+        nav div button:hover {
+            background-color: rgb(185, 134, 17);
+            color: antiquewhite;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            perspective: 2px;
+            align-items: center;
+            color: rgb(193, 114, 10);
+            padding: 40px 60px;
+        }
+        .hero div {
+            width: 50%;
+        }
+        .hero div h1 {
+            text-align: center;
+            font-size: 100px;
+            padding: 20px;
+        }
+        .hero div p {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .hero div button {
+            border: none;
+            padding: 10px;
+            width: 650px;
+            border-radius: 20px;
+            background-color: rgb(152, 122, 85);
+            color: whitesmoke;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .hero div button:hover{
+            background-color: rgb(106, 79, 47);
+        }
+        nav div img{
+            width: 70px;
+        }
+        .hero div img {
+            width: 700px;
+            border-radius: 30px;
+            object-fit: cover;
+            transition: all 0.3s ease-in-out ;
+            border:5px solid gold;
+            box-shadow: 0 0 20px rgb(175, 156, 47);
+        }
+        .hero div img:hover {
+            transform: rotate3d(1,1,0,15deg);
+        }
+        .logo-text {
+            text-align: center;
+            font-size: 90px;
+            padding: 20px;
+            color:rgb(193, 114, 10);
+        }
+        .logo {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            margin: 30px 10% ;
+            border: 5px solid gold;
+            border-radius: 50px;
+            background: linear-gradient(95deg,rgb(212, 192, 192),rgb(212, 111, 23));
+            box-shadow: 0 0 20px gold;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .logo div {
+            text-align:center;
+        }
+        .logo div i {
+            font-size: 80px;
+            color: gold;
+            margin-bottom: 10px;
+        }
+        .three-cards {
+            display: flex;
+            margin: 20px 10%;
+            justify-content: space-between;
+            text-align: center;
+            gap: 200px;
+            font-size: 15px;
+        }
+        div h3 {
+            margin: 20px;
+            font-size: 25px;
+        }
+        @media screen and (max-width:976px){
+            body{
+                background-color: rgb(176, 205, 176);
+            }
+            .three-cards {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
+            .logo {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 20px gold;
+            background: linear-gradient(95deg,rgb(212, 192, 192),rgb(212, 111, 23));
+        }
+        .card-title{
+            color: gold;
+            font-size: 30px;
+        }
+        .card-text {
+            color: wheat;
+        }
+        body{
+            background: linear-gradient(135deg,black, rgb(189, 102, 44));
+        }
+        /* Footer styling */
+        footer {
+            background: linear-gradient(95deg,rgb(212, 192, 192),rgb(212, 111, 23));
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 0 20px gold;
+            border-top: 3px solid gold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       
+    <nav>
+        <div>
+            <img src="./image copy 2.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <button style="cursor: pointer;">Sign up</button>
+            <a href="./login.html">
+                <button style="cursor: pointer;">Login</button>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>That's Me</h1>
+            <p>Hi there, I am Soumya Harjani, a BTech 
+                student(1st year) from VIT Bhopal University, Kothri Kalan, 
+                Bhopal. I am in my first year and looking forward to work 
+                in the area of software development, full stack development, and programming.
+
+                Talking about some of my achievements, I have been recommended 
+                in NDA – 155 in the Indian Army from 21-SSB Bhopal. I have also 
+                participated in various competitions, such as MUN , Youth Parliament, 
+                Olympiads, Organised the Book Fair etc.
+
+                From the very beginning, I have always been 
+                interested in the field of computer science and 
+                therefore to enhance my skills, I am learning  web 
+                development, Gen AI, DSA, programming languages etc. <br>
+
+                #Aimer not a Dreamer
+            </p>
+            <button>Sign Up</button>
+        </div>
+        <div>
+            <img src="/image.png" alt="image1"  >
+        </div>
+    </section>
+
+    <h2 class="logo-text">Our Clients</h2>
+    <section class="logo">
+        <div>
+            <i class="fab fa-google"></i>
+            <p>Client 1</p>
+        </div>
+        <div>
+            <i class="fas fa-rocket"></i>
+            <p>Client 2</p>
+        </div>
+        <div>
+            <i class="fas fa-code"></i>
+            <p>Client 3</p>
+        </div>
+        <div>
+            <i class="fas fa-cogs"></i>
+            <p>Client 4</p>
+        </div>
+        <div>
+            <i class="fas fa-car"></i>
+            <p>Client 5</p>
+        </div>
+    </section>
+    
+    <h2 style="text-align: center; margin-bottom:50px ;font-size: 60px;color: rgb(193, 114, 10);">What You'll Learn</h2>
+    <section class="three-cards">
+    
+        <!-- Bootstrap Card 1 -->
+        <div class="card" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" 
+                 class="card-img-top" alt="python image" 
+                 style="padding: 20px; border:2px solid; border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">Learn Python</h5>
+              <p class="card-text">Python is a high-level, general-purpose programming language.
+                Its design philosophy emphasizes code readability with the use of 
+                significant indentation. Python is dynamically type-checked and garbage-collected.
+              </p>
+              <a href="./page2.html" class="btn btn-primary">python seekhega laadle</a>
+            </div>
+        </div>
+
+        <!-- Bootstrap Card 2 -->
+        <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFyEQ9FxotJhVjnyqErZ7DCjQlUmkDYO2Bw&s" 
+                 class="card-img-top" alt="c++ image" 
+                 style="padding: 20px;border:2px solid; border-radius: 20px; ">
+            <div class="card-body">
+              <h5 class="card-title">Learn C++</h5>
+              <p class="card-text">C++ is a powerful, general-purpose, and procedural programming language 
+                developed by Dennis Ritchie at Bell Laboratories in the early 1970s. 
+                It was initially designed for developing the UNIX operating system and 
+                has since become a foundational language.
+              </p>
+              <a href="./page1.html" class="btn btn-primary">C++ sikhna h lgta h??</a>
+            </div>
+        </div>
+
+        <!-- Bootstrap Card 3 -->
+        <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnOWqzlQcHX1WS-PRUEJjk6tZu-Z6iijaSw&s" 
+                 class="card-img-top" alt="java image" 
+                 style="padding: 20px;border:2px solid; border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">Learn Java</h5>
+              <p class="card-text">Java is a high-level, general-purpose, memory-safe, 
+                object-oriented programming language. It is intended to let programmers 
+                write once, run anywhere, meaning that compiled Java code can run on all 
+                platforms that support Java without the need to recompile.
+              </p>
+              <a href="./page3.html" class="btn btn-primary">aaja aaja sikhaun java</a>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        © 2025 Soumya Harjani | All Rights Reserved
+        <br>
+        <small>Made with ❤️ by Soumya</small>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+</html>
